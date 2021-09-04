@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #bff4f5;
+    position: relative;
+   
+    
+}
+
+
+span{
+    color: #f31010;
+}
+
+h1{
+    color: green;
+    text-transform: uppercase;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    cursor: default;
+}
+
+
+h1::selection{
+    color: #fff;
+    background: #f31010;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    height: 85px;
+    padding: 0rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+input{
+    border: 0;
+    outline: none;
+    background: none;
+    height: 100%;
+    padding-left: 25px;
+    font-size: 1em;
+    font-weight: 500;
+    width:0px;
+    transition:  1s;
+    caret-color: red;
+}
+
+::placeholder{
+    color: skyblue;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.google-img{
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.mic-img{
+    width: 0px;
+    transition: .5s;
+    transition-delay: .5s;
+    border-radius: 50%;
+}
+
+.active input{
+    width: 600px;
+}
+
+.active .mic-img{
+    width: 30px;
+}
+
